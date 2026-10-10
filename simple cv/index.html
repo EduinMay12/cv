@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV - Eduin Amilcar May Uc.</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     BARRA FLOTANTE
+===================================================== -->
+
+<div class="floating-toolbar no-export">
+
+    <button
+        class="tool-btn btn-save"
+        onclick="guardarCV()"
+        title="Guardar CV">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+    </button>
+
+    <button
+        class="tool-btn btn-color"
+        onclick="abrirColores()"
+        title="Colores">
+
+        <i class="fa-solid fa-palette"></i>
+
+    </button>
+
+    <button
+        class="tool-btn btn-photo"
+        onclick="abrirFoto()"
+        title="Foto">
+
+        <i class="fa-solid fa-camera"></i>
+
+    </button>
+
+    <button
+        class="tool-btn btn-png"
+        onclick="descargarPNG()"
+        title="Descargar PNG">
+
+        <i class="fa-solid fa-image"></i>
+
+    </button>
+
+    <button
+        class="tool-btn btn-pdf"
+        onclick="descargarPDF()"
+        title="Descargar PDF">
+
+        <i class="fa-solid fa-file-pdf"></i>
+
+    </button>
+
+</div>
+
+
+<!-- =====================================================
+     CV
+===================================================== -->
+
+<main
+    class="cv-page"
+    id="cv">
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- FOTO -->
+
+        <div
+            id="profilePhotoContainer"
+            class="profile-photo-container mb-3"
+            style="display:none;">
+
+            <img
+                id="profilePhoto"
+                src="user.jpeg"
+                class="mb-3"
+                alt="Foto de perfil">
+
+        </div>
+
+        <div class="heading-line m-3"></div>
+
+        <!-- PERFIL -->
+
+        <section class="side-section profile">
+
+            <div class="section-title side-title">
+
+                <span class="circle-icon">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    PERFIL PROFESIONAL
+                </h2>
+
+            </div>
+
+            <p
+                contenteditable="true"
+                data-save>
+
+                Desarrollador de software con más de 5 años de experiencia
+                en el diseño, desarrollo e implementación de aplicaciones web
+                robustas y escalables. Especializado en back-end, APIs RESTful,
+                microservicios y arquitectura de sistemas. Enfocado en buenas
+                prácticas, código limpio, automatización de procesos e
+                integración de soluciones en la nube.
+
+            </p>
+
+        </section>
+
+        <div class="heading-line m-3"></div>
+
+        <!-- CONTACTO -->
+
+        <section class="side-section">
+
+            <div class="section-title side-title">
+
+                <span class="circle-icon">
+                    <i class="fa-solid fa-address-book"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    CONTACTO
+                </h2>
+
+            </div>
+
+            <ul
+                class="contact-list"
+                id="contactos">
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Mérida, Yucatán, México
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarContacto(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        (999) 613 0007
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarContacto(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        eduin.may95@hotmail.com
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarContacto(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-github"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        github.com/edmay12
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarContacto(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </li>
+
+            </ul>
+
+            <button
+                class="btn-add-side no-export"
+                onclick="agregarContacto()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar contacto
+
+            </button>
+
+        </section>
+
+        <div class="heading-line m-3"></div>
+
+        <!-- EDUCACIÓN -->
+
+        <section class="side-section">
+
+            <div class="section-title side-title">
+
+                <span class="circle-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    EDUCACIÓN
+                </h2>
+
+            </div>
+
+            <div id="educacion">
+
+                <div class="education editable-side-card">
+
+                    <strong
+                        contenteditable="true"
+                        data-save>
+
+                        Universidad Tecnológica
+                        <br>
+                        del Poniente
+
+                    </strong>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+
+                        Tecnologías de la Información
+                        <br>
+                        y Comunicación.
+
+                    </span>
+
+                    <small
+                        contenteditable="true"
+                        data-save>
+
+                        <i class="fa-regular fa-calendar"></i>
+                        2017 - 2021
+
+                    </small>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarEducacion(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn-add-side no-export"
+                onclick="agregarEducacion()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar educación
+
+            </button>
+
+        </section>
+
+        <div class="heading-line m-3"></div>
+
+        <!-- CERTIFICACIONES -->
+
+        <section class="side-section">
+
+            <div class="section-title side-title">
+
+                <span class="circle-icon">
+                    <i class="fa-solid fa-award"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    CERTIFICACIONES
+                </h2>
+
+            </div>
+
+            <ul
+                class="cert-list"
+                id="certificaciones">
+
+                <li>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Scrum
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCertificacion(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </li>
+
+                <li>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        HTML, CSS, JavaScript Fundamentals
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCertificacion(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </li>
+
+                <li>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Git & GitHub
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCertificacion(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </li>
+
+                <li>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        CyberSecurity Fortinet
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCertificacion(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </li>
+
+                <li>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        AWS Cloud Practitioner
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCertificacion(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+            <button
+                class="btn-add-side no-export"
+                onclick="agregarCertificacion()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar certificación
+
+            </button>
+
+        </section>
+
+        <div class="heading-line m-3"></div>
+
+        <!-- HABILIDADES -->
+
+        <section class="side-section technical">
+
+            <div class="section-title side-title">
+
+                <span class="circle-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    HABILIDADES TÉCNICAS
+                </h2>
+
+            </div>
+
+            <div
+                id="habilidades">
+
+                <div class="skill-group">
+
+                    <h3
+                        contenteditable="true"
+                        data-save>
+                        LENGUAJES
+                    </h3>
+
+                    <div class="skill-row">
+
+                        <span
+                            contenteditable="true"
+                            data-save>
+                            PHP
+                        </span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="skill-row">
+
+                        <span
+                            contenteditable="true"
+                            data-save>
+                            JavaScript
+                        </span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="skill-row">
+
+                        <span
+                            contenteditable="true"
+                            data-save>
+                            TypeScript
+                        </span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i>
+                            <b></b><b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="skill-row">
+
+                        <span
+                            contenteditable="true"
+                            data-save>
+                            Python
+                        </span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i>
+                            <b></b><b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="skill-row">
+
+                        <span
+                            contenteditable="true"
+                            data-save>
+                            SQL
+                        </span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="skill-group">
+
+                    <h3
+                        contenteditable="true"
+                        data-save>
+                        FRAMEWORKS / LIBRERÍAS
+                    </h3>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>Laravel</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>Angular</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i>
+                            <b></b><b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>Node.js</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>jQuery</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i>
+                            <b></b><b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>Bootstrap</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>Tailwind CSS</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i>
+                            <b></b><b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="skill-group">
+
+                    <h3
+                        contenteditable="true"
+                        data-save>
+                        BASES DE DATOS
+                    </h3>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>MySQL</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>SQL Server</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                            <b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="skill-row">
+                        <span contenteditable="true" data-save>MongoDB</span>
+
+                        <span class="dots">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i>
+                            <b></b><b></b>
+                        </span>
+
+                        <button
+                            class="delete-side no-export"
+                            onclick="eliminarHabilidad(this)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn-add-side no-export"
+                onclick="agregarHabilidad()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar habilidad
+
+            </button>
+
+        </section>
+
+        <div class="heading-line m-3"></div>
+
+        <!-- CLOUD -->
+
+        <section
+            class="side-section"
+            id="cloudSection">
+
+            <div class="section-title side-title">
+
+                <span class="circle-icon">
+                    <i class="fa-solid fa-cloud"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    CLOUD / NUBE
+                </h2>
+
+            </div>
+
+            <div id="cloudItems">
+
+                <div class="cloud-item">
+
+                    <i class="fa-brands fa-aws"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Amazon Web Services
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCloud(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="cloud-item">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        AWS Lambda
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCloud(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="cloud-item">
+
+                    <i class="fa-solid fa-box"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Amazon S3
+                    </span>
+
+                    <button
+                        class="delete-side no-export"
+                        onclick="eliminarCloud(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn-add-side no-export"
+                onclick="agregarCloud()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar tecnología Cloud
+
+            </button>
+
+        </section>
+
+    </aside>
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <section class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <h1
+                contenteditable="true"
+                data-save>
+                EDUIN AMILCAR MAY UC
+            </h1>
+
+            <h2
+                contenteditable="true"
+                data-save>
+                DESARROLLADOR DE SOFTWARE / BACK-END / FRONT-END
+            </h2>
+
+            <div class="highlights">
+
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <strong
+                        contenteditable="true"
+                        data-save>
+                        +5 años de experiencia
+                    </strong>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+                    <strong
+                        contenteditable="true"
+                        data-save>
+                        APIs & Microservicios
+                    </strong>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+
+                    <strong
+                        contenteditable="true"
+                        data-save>
+                        Cloud & DevOps
+                    </strong>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                    <strong
+                        contenteditable="true"
+                        data-save>
+                        Soluciones Escalables
+                    </strong>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- EXPERIENCIA -->
+
+        <section class="content-section experience-section">
+
+            <div class="main-section-heading">
+
+                <span class="green-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    EXPERIENCIA PROFESIONAL
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div
+                class="timeline"
+                id="experiencias">
+
+                <!-- EXPERIENCIA 1 -->
+
+                <article class="job">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <h3
+                                contenteditable="true"
+                                data-save>
+                                DESARROLLADOR BACKEND
+                            </h3>
+
+                            <h4
+                                contenteditable="true"
+                                data-save>
+                                FUNDACIÓN RAFAEL DONDE I.A.P
+                            </h4>
+
+                        </div>
+
+                        <time
+                            contenteditable="true"
+                            data-save>
+                            2025 – 2026
+                        </time>
+
+                    </div>
+
+                    <ul class="job-list">
+
+                        <li contenteditable="true" data-save>
+                            Desarrollo y mantenimiento de microservicios utilizando .NET, Node.js y NestJS.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Diseño e implementación de APIs REST seguras, escalables y documentadas con Swagger/OpenAPI.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Contenerización y despliegue de aplicaciones con Docker y Docker Compose.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Administración del código fuente con Git, GitHub y flujos de trabajo colaborativos.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Desarrollo de soluciones en AWS utilizando Lambda, API Gateway, S3, IAM, CloudWatch, EC2, RDS y CloudFront.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Implementación de autenticación y autorización con JWT y OAuth2.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Integración de servicios mediante RabbitMQ y arquitectura basada en eventos.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Desarrollo bajo arquitectura de Microservicios, Clean Architecture y patrón MVC.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Optimización de consultas y administración de bases de datos SQL Server, MySQL, PostgreSQL, MongoDB y Redis.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Desarrollo con GraphQL y APIs REST para integración entre sistemas.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Implementación de procesos de CI/CD con GitHub Actions.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Configuración de Nginx como servidor web y reverse proxy.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Trabajo bajo metodologías Scrum, utilizando Jira y Trello.
+                            <button
+                                class="bullet-delete no-export"
+                                onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                    <div class="item-actions no-export">
+
+                        <button
+                            onclick="agregarBullet(this)"
+                            class="btn-add-section no-export">
+
+                            <i class="fa-solid fa-plus"></i>
+                            Agregar punto
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EXPERIENCIA 2 -->
+
+                <article class="job">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <h3
+                                contenteditable="true"
+                                data-save>
+                                DESARROLLADOR DE SOFTWARE
+                            </h3>
+
+                            <h4
+                                contenteditable="true"
+                                data-save>
+                                TOYOTA MÉRIDA
+                            </h4>
+
+                        </div>
+
+                        <time
+                            contenteditable="true"
+                            data-save>
+                            2023 – 2025
+                        </time>
+
+                    </div>
+
+                    <ul class="job-list">
+
+                        <li contenteditable="true" data-save>
+                            Análisis, desarrollo y gestión de proyecto CicloData.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Migración de proyecto a GitHub y funciones de Scrum.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Framework: LARAVEL.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Frontend: HTML, CSS, Bootstrap.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Backend: JavaScript, PHP, AJAX | BD: MySQL.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                    <div class="item-actions no-export">
+
+                        <button
+                            onclick="agregarBullet(this)"
+                            class="btn-add-section no-export">
+
+                            <i class="fa-solid fa-plus"></i>
+                            Agregar punto
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EXPERIENCIA 3 -->
+
+                <article class="job">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <h3
+                                contenteditable="true"
+                                data-save>
+                                PROGRAMADOR DE SOFTWARE
+                            </h3>
+
+                            <h4
+                                contenteditable="true"
+                                data-save>
+                                BOMSSA
+                            </h4>
+
+                        </div>
+
+                        <time
+                            contenteditable="true"
+                            data-save>
+                            2021 – 2023
+                        </time>
+
+                    </div>
+
+                    <ul class="job-list">
+
+                        <li contenteditable="true" data-save>
+                            Importaciones y pedidos.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Integración de modelos y módulos de carteras.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Lectura y peticiones SQL Server.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Framework: LARAVEL.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Frontend: HTML, CSS, Bootstrap.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                        <li contenteditable="true" data-save>
+                            Backend: JavaScript, jQuery, PHP, AJAX, MySQL.
+                            <button class="bullet-delete no-export" onclick="eliminarBullet(this)">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                    <div class="item-actions no-export">
+
+                        <button
+                            onclick="agregarBullet(this)"
+                            class="btn-add-section no-export">
+
+                            <i class="fa-solid fa-plus"></i>
+                            Agregar punto
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <button
+                class="btn-add-section no-export"
+                onclick="agregarExperiencia()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar experiencia
+
+            </button>
+
+        </section>
+
+
+        <!-- COMPETENCIAS -->
+
+        <section class="content-section">
+
+            <div class="main-section-heading">
+
+                <span class="green-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    COMPETENCIAS CLAVE
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div
+                class="competencies"
+                id="competencias">
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Desarrollo Back-End
+                        <br>
+                        con Laravel y PHP
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-server"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        APIs RESTful y
+                        <br>
+                        Microservicios
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-puzzle-piece"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Integración de
+                        <br>
+                        Sistemas
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Optimización de
+                        <br>
+                        Bases de Datos
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-code-branch"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Control de Versiones
+                        <br>
+                        (Git)
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-arrows-rotate"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Metodologías Ágiles
+                        <br>
+                        (Scrum)
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Trabajo en equipo y
+                        <br>
+                        comunicación
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Solución de problemas
+                        <br>
+                        y pensamiento lógico
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="competency editable-card">
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                    <span
+                        contenteditable="true"
+                        data-save>
+                        Adaptabilidad y
+                        <br>
+                        aprendizaje continuo
+                    </span>
+
+                    <button
+                        class="no-export"
+                        onclick="eliminarCompetencia(this)">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn-add-section no-export"
+                onclick="agregarCompetencia()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar competencia
+
+            </button>
+
+        </section>
+
+
+        <!-- STACK -->
+
+        <section class="content-section stack-section">
+
+            <div class="main-section-heading">
+
+                <span class="green-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </span>
+
+                <h2
+                    contenteditable="true"
+                    data-save>
+                    STACK TECNOLÓGICO
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div
+                class="stack-grid"
+                id="stack">
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <span contenteditable="true" data-save>.NET</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-c"></i>
+                    <span contenteditable="true" data-save>C#</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-fire"></i>
+                    <span contenteditable="true" data-save>NestJS</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-js"></i>
+                    <span contenteditable="true" data-save>TypeScript</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-node-js"></i>
+                    <span contenteditable="true" data-save>Node.js</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-laravel"></i>
+                    <span contenteditable="true" data-save>Laravel</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-php"></i>
+                    <span contenteditable="true" data-save>PHP</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-js"></i>
+                    <span contenteditable="true" data-save>JavaScript</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span contenteditable="true" data-save>jQuery</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <span contenteditable="true" data-save>Bootstrap</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-wind"></i>
+                    <span contenteditable="true" data-save>TailwindCSS</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span contenteditable="true" data-save>MySQL</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span contenteditable="true" data-save>SQL Server</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span contenteditable="true" data-save>MongoDB</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span contenteditable="true" data-save>Redis</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-aws"></i>
+                    <span contenteditable="true" data-save>AWS</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span contenteditable="true" data-save>Lambda</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span contenteditable="true" data-save>API Gateway</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <span contenteditable="true" data-save>S3</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span contenteditable="true" data-save>RDS</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-docker"></i>
+                    <span contenteditable="true" data-save>Docker</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-server"></i>
+                    <span contenteditable="true" data-save>Nginx</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span contenteditable="true" data-save>Git</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span contenteditable="true" data-save>GitHub</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-jira"></i>
+                    <span contenteditable="true" data-save>Jira</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-brands fa-trello"></i>
+                    <span contenteditable="true" data-save>Trello</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span contenteditable="true" data-save>RabbitMQ</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span contenteditable="true" data-save>GraphQL</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span contenteditable="true" data-save>PostgreSQL</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="stack-item editable-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span contenteditable="true" data-save>CloudWatch</span>
+                    <button class="no-export" onclick="eliminarStack(this)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <button
+                class="btn-add-section no-export"
+                onclick="agregarTecnologia()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar tecnología
+
+            </button>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     MODAL COLORES
+===================================================== -->
+
+<div
+    class="modal fade"
+    id="colorModal"
+    tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="fa-solid fa-palette"></i>
+                    Personalizar colores
+
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <label class="form-label">
+                    Color sidebar 1
+                </label>
+
+                <input
+                    type="color"
+                    id="colorNavy"
+                    class="form-control form-control-color"
+                    value="#000000">
+
+
+                <label class="form-label mt-3">
+                    Color sidebar 2
+                </label>
+
+                <input
+                    type="color"
+                    id="colorNavy2"
+                    class="form-control form-control-color"
+                    value="#000980">
+
+
+                <label class="form-label mt-3">
+                    Color de textos
+                </label>
+
+                <input
+                    type="color"
+                    id="colorBlue"
+                    class="form-control form-control-color"
+                    value="#0014a8">
+
+
+                <label class="form-label mt-3">
+                    Fondo de iconos
+                </label>
+
+                <input
+                    type="color"
+                    id="colorGreen"
+                    class="form-control form-control-color"
+                    value="#c20000">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cancelar
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="aplicarColores()">
+                    Aplicar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MODAL FOTO
+===================================================== -->
+
+<div
+    class="modal fade"
+    id="photoModal"
+    tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="fa-solid fa-camera"></i>
+                    Foto de perfil
+
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <input
+                    type="file"
+                    id="photoInput"
+                    class="form-control"
+                    accept="image/png,image/jpeg,image/webp">
+
+                <div class="form-check mt-3">
+
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="showPhoto">
+
+                    <label
+                        class="form-check-label"
+                        for="showPhoto">
+
+                        Mostrar foto de perfil
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-danger"
+                    onclick="eliminarFoto()">
+
+                    <i class="fa-solid fa-trash"></i>
+                    Eliminar foto
+
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="guardarFoto()">
+
+                    Guardar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MODAL ICONO
+===================================================== -->
+
+<div
+    class="modal fade"
+    id="iconModal"
+    tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    <i class="fa-solid fa-icons"></i>
+                    Seleccionar icono
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <input
+                    type="text"
+                    id="iconSearch"
+                    class="form-control mb-3"
+                    placeholder="Buscar icono...">
+
+                <div
+                    class="icon-picker"
+                    id="iconPicker">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js">
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js">
+</script>
+
+<script src="app.js"></script>
+
+</body>
+</html>

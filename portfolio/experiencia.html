@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Experiencia | Eduin May
+    </title>
+
+
+    <!-- =========================================
+         TAILWIND
+    ========================================== -->
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS PERSONALIZADO
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         FONDO LIQUID GLASS
+    ========================================== -->
+
+    <div class="orb orb-a"></div>
+
+    <div class="orb orb-b"></div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <nav class="glass-nav">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        <img
+                            src="foto.jpeg"
+                            alt="Logo Eduin May"
+                            class="brand-logo"
+                        >
+                    </span>
+
+                    <span>
+
+                        <b>
+                            Eduin May
+                        </b>
+
+                        <small>
+                            Software Engineer
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <!-- MENÚ MOBILE -->
+
+                <button
+                    id="menuButton"
+                    class="nav-icon lg:hidden"
+                    aria-label="Abrir menú"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <!-- NAVEGACIÓN -->
+
+                <div
+                    id="mainMenu"
+                    class="main-menu"
+                	>
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="tecnologias.html">
+                        Tecnologías
+                    </a>
+
+                    <a href="experiencia.html">
+                        Experiencia
+                    </a>
+
+                    <a href="proyectos.html">
+                        Proyectos
+                    </a>
+
+                    <a href="certificaciones.html">
+                        Certificaciones
+                    </a>
+
+                    <a href="competencias.html">
+                        Competencias
+                    </a>
+
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+                    
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+
+                    <a href="social.html">
+                        Redes Sociales
+                    </a>
+
+                    <a href="cv.html">
+                        CV
+                    </a>
+
+                </div>
+
+
+                <!-- MODO OSCURO -->
+
+                <button
+                    id="themeToggle"
+                    class="nav-icon"
+                    aria-label="Cambiar modo claro/oscuro"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="wrap page">
+
+
+        <!-- ENCABEZADO -->
+
+        <span class="eyebrow">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            EXPERIENCIA
+
+        </span>
+
+
+        <h1 class="page-title">
+
+            Software construido en
+            contextos reales de negocio.
+
+        </h1>
+
+
+        <p class="lead">
+
+            Experiencia en aplicaciones internas,
+            desarrollo back-end, APIs,
+            microservicios, integración de sistemas,
+            bases de datos, cloud y despliegue
+            de soluciones empresariales.
+
+        </p>
+
+
+        <!-- =====================================
+             TIMELINE
+        ====================================== -->
+
+        <div class="timeline mt-12">
+
+
+            <!-- =================================
+                 FUNDACIÓN RAFAEL DONDÉ
+            ================================== -->
+
+            <article>
+
+                <time>
+                    2025 — 2026
+                </time>
+
+
+                <div>
+
+                    <span class="tag">
+                        Fundación Rafael Dondé I.A.P.
+                    </span>
+
+
+                    <h2>
+                        Desarrollador Backend
+                    </h2>
+
+
+                    <p>
+
+                        Desarrollo y mantenimiento de
+                        microservicios y componentes
+                        back-end utilizando .NET,
+                        Node.js y NestJS.
+
+                    </p>
+
+
+                    <ul class="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Diseño e implementación de
+                            APIs REST seguras,
+                            escalables y documentadas
+                            con Swagger/OpenAPI.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Contenerización y despliegue
+                            de aplicaciones mediante
+                            Docker y Docker Compose.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Implementación de soluciones
+                            en AWS utilizando Lambda,
+                            API Gateway, S3, IAM,
+                            CloudWatch, EC2, RDS
+                            y CloudFront.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Autenticación y autorización
+                            con JWT y OAuth2.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Integración de servicios
+                            mediante RabbitMQ,
+                            GraphQL y arquitectura
+                            basada en eventos.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Implementación de CI/CD
+                            con GitHub Actions y
+                            configuración de Nginx.
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- TECNOLOGÍAS -->
+
+                    <div class="chips">
+
+                        <span>
+                            .NET
+                        </span>
+
+                        <span>
+                            C#
+                        </span>
+
+                        <span>
+                            Node.js
+                        </span>
+
+                        <span>
+                            NestJS
+                        </span>
+
+                        <span>
+                            AWS
+                        </span>
+
+                        <span>
+                            Docker
+                        </span>
+
+                        <span>
+                            RabbitMQ
+                        </span>
+
+                        <span>
+                            GraphQL
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 TOYOTA MÉRIDA
+            ================================== -->
+
+            <article>
+
+                <time>
+                    2023 — 2025
+                </time>
+
+
+                <div>
+
+                    <span class="tag">
+                        Toyota Mérida
+                    </span>
+
+
+                    <h2>
+                        Desarrollador de Software
+                    </h2>
+
+
+                    <p>
+
+                        Análisis, desarrollo y evolución
+                        de soluciones internas para
+                        procesos empresariales.
+
+                    </p>
+
+
+                    <ul class="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Análisis, desarrollo y gestión
+                            del proyecto CicloData.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Migración del proyecto
+                            y administración del código
+                            mediante GitHub.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Desarrollo back-end
+                            utilizando Laravel,
+                            PHP, JavaScript y AJAX.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Administración de MySQL
+                            y procedimientos almacenados.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Participación en procesos
+                            y metodologías Scrum.
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- TECNOLOGÍAS -->
+
+                    <div class="chips">
+
+                        <span>
+                            Laravel
+                        </span>
+
+                        <span>
+                            PHP
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            AJAX
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                        <span>
+                            GitHub
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 BOMSSA
+            ================================== -->
+
+            <article>
+
+                <time>
+                    2021 — 2023
+                </time>
+
+
+                <div>
+
+                    <span class="tag">
+                        BOMSSA
+                    </span>
+
+
+                    <h2>
+                        Programador de Software
+                    </h2>
+
+
+                    <p>
+
+                        Desarrollo y mantenimiento
+                        de sistemas internos enfocados
+                        en procesos operativos y
+                        administrativos.
+
+                    </p>
+
+
+                    <ul class="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Desarrollo de módulos
+                            para importaciones
+                            y pedidos.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Integración de modelos
+                            y módulos de carteras.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Lectura, procesamiento
+                            y consultas sobre
+                            SQL Server.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Desarrollo utilizando
+                            Laravel, PHP,
+                            JavaScript, jQuery
+                            y AJAX.
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- TECNOLOGÍAS -->
+
+                    <div class="chips">
+
+                        <span>
+                            Laravel
+                        </span>
+
+                        <span>
+                            PHP
+                        </span>
+
+                        <span>
+                            jQuery
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            SQL Server
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================
+                 UNIVERSIDAD
+            ================================== -->
+
+            <article>
+
+                <time>
+                    Formación
+                </time>
+
+
+                <div>
+
+                    <span class="tag">
+                        Universidad Tecnológica del Poniente
+                    </span>
+
+
+                    <h2>
+                        Desarrollo de Software
+                    </h2>
+
+
+                    <p>
+
+                        Desarrollo y mantenimiento
+                        de plataforma web para
+                        procesos académicos
+                        y administrativos.
+
+                    </p>
+
+
+                    <ul class="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Desarrollo de la plataforma
+                            de Reporte Técnico
+                            utilizando Laravel.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Automatización de
+                            diferentes flujos
+                            de trabajo.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Soporte técnico
+                            y atención a usuarios.
+
+                        </li>
+
+
+                        <li class="flex gap-2">
+
+                            <i
+                                class="
+                                    fa-solid
+                                    fa-check
+                                    text-emerald-500
+                                    mt-1
+                                "
+                            ></i>
+
+                            Desarrollo con MySQL,
+                            JavaScript, jQuery,
+                            HTML y CSS.
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- TECNOLOGÍAS -->
+
+                    <div class="chips">
+
+                        <span>
+                            Laravel
+                        </span>
+
+                        <span>
+                            PHP
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            jQuery
+                        </span>
+
+                        <span>
+                            HTML/CSS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div
+            class="
+                max-w-7xl
+                mx-auto
+                px-5
+                py-10
+
+                flex
+                flex-col
+
+                md:flex-row
+                md:items-center
+                md:justify-between
+
+                gap-5
+            "
+        >
+
+
+            <!-- INFORMACIÓN -->
+
+            <div>
+
+                <b>
+                    Eduin Amilcar May Uc.
+                </b>
+
+                <p>
+                    Mérida, Yucatán · Back-End / Full Stack
+                </p>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="flex gap-3">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-btn"
+                    href="mailto:eduin.may95@hotmail.com"
+                    aria-label="Correo"
+                >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="social-btn"
+                    href="https://github.com/edmay12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <!-- TELÉFONO -->
+
+                <a
+                    class="social-btn"
+                    href="tel:+529996130007"
+                    aria-label="Teléfono"
+                >
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

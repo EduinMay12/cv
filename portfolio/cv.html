@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CV | Eduin Amilcar May Uc.
+    </title>
+
+
+    <!-- =========================================
+         TAILWIND CSS
+    ========================================== -->
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS DEL CV
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="cv.css"
+    >
+
+
+    <!-- =========================================
+         CSS GLOBAL DEL PORTAFOLIO
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         FONDO LIQUID GLASS
+    ========================================== -->
+
+    <div class="orb orb-a"></div>
+
+    <div class="orb orb-b"></div>
+
+
+    <!-- =========================================
+         HEADER / NAVBAR
+    ========================================== -->
+
+    <header class="site-header no-export">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <nav class="glass-nav">
+
+
+                <!-- =================================
+                     LOGO
+                ================================== -->
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        <img
+                            src="foto.jpeg"
+                            alt="Logo Eduin May"
+                            class="brand-logo"
+                        >
+                    </span>
+
+
+                    <span>
+
+                        <b>
+                            Eduin May
+                        </b>
+
+                        <small>
+                            Software Engineer
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <!-- =================================
+                     BOTÓN MENÚ MOBILE
+                ================================== -->
+
+                <button
+                    id="menuButton"
+                    class="nav-icon lg:hidden"
+                    aria-label="Abrir menú"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <!-- =================================
+                     NAVEGACIÓN
+                ================================== -->
+
+                <div
+                    id="mainMenu"
+                    class="main-menu"
+                >
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="tecnologias.html">
+                        Tecnologías
+                    </a>
+
+                    <a href="experiencia.html">
+                        Experiencia
+                    </a>
+
+                    <a href="proyectos.html">
+                        Proyectos
+                    </a>
+
+                    <a href="certificaciones.html">
+                        Certificaciones
+                    </a>
+
+                    <a href="competencias.html">
+                        Competencias
+                    </a>
+
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+
+                    <a href="social.html">
+                        Redes Sociales
+                    </a>
+
+                    <a href="cv.html">
+                        CV
+                    </a>
+
+                </div>
+
+
+                <!-- =================================
+                     MODO OSCURO
+                ================================== -->
+
+                <button
+                    id="themeToggle"
+                    class="nav-icon"
+                    aria-label="Cambiar modo claro/oscuro"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         BOTONES FLOTANTES
+    ========================================== -->
+
+    <div class="floating-toolbar no-export">
+
+
+        <!-- PNG -->
+
+        <button
+            onclick="descargarPNG()"
+            class="tool-btn tool-green"
+            title="Descargar PNG"
+            type="button"
+        >
+
+            <i class="fa-solid fa-image"></i>
+
+        </button>
+
+
+        <!-- PDF -->
+
+        <button
+            onclick="descargarPDF()"
+            class="tool-btn tool-red"
+            title="Descargar PDF"
+            type="button"
+        >
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- =========================================
+         CV
+    ========================================== -->
+
+    <main
+        id="cv"
+        class="cv-page mt-20"
+    >
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- EFECTO GLOW -->
+
+            <div class="sidebar-glow"></div>
+
+            <!-- =================================
+                 PERFIL PROFESIONAL
+            ================================== -->
+
+            <section class="side-section">
+
+                <div class="side-heading">
+
+                    <span class="side-icon">
+
+                        <i class="fa-regular fa-user"></i>
+
+                    </span>
+
+                    <h2>
+                        PERFIL PROFESIONAL
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Desarrollador de software con más de
+                    5 años de experiencia en el diseño,
+                    desarrollo e implementación de
+                    aplicaciones web robustas y escalables.
+
+                    Especializado en back-end,
+                    APIs RESTful, microservicios,
+                    automatización, integración de sistemas
+                    y soluciones cloud.
+
+                </p>
+
+            </section>
+
+
+            <!-- =================================
+                 CONTACTO
+            ================================== -->
+
+            <section class="side-section">
+
+                <div class="side-heading">
+
+                    <span class="side-icon">
+
+                        <i class="fa-solid fa-address-card"></i>
+
+                    </span>
+
+                    <h2>
+                        CONTACTO
+                    </h2>
+
+                </div>
+
+
+                <ul class="contact-list">
+
+
+                    <li>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Mérida, Yucatán, México
+                        </span>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <span>
+                            (999) 613 0007
+                        </span>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <span>
+                            eduin.may95@hotmail.com
+                        </span>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <span>
+                            github.com/edmay12
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- =================================
+                 EDUCACIÓN
+            ================================== -->
+
+            <section class="side-section">
+
+                <div class="side-heading">
+
+                    <span class="side-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </span>
+
+                    <h2>
+                        EDUCACIÓN
+                    </h2>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <strong>
+                        Universidad Tecnológica del Poniente
+                    </strong>
+
+                    <span>
+                        Tecnologías de la Información
+                        y Comunicación
+                    </span>
+
+                    <small>
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        2017 - 2021
+
+                    </small>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 CERTIFICACIONES
+            ================================== -->
+
+            <section class="side-section">
+
+                <div class="side-heading">
+
+                    <span class="side-icon">
+
+                        <i class="fa-solid fa-award"></i>
+
+                    </span>
+
+                    <h2>
+                        CERTIFICACIONES
+                    </h2>
+
+                </div>
+
+
+                <ul class="cert-list">
+
+                    <li>
+                        Scrum
+                    </li>
+
+                    <li>
+                        HTML, CSS, JavaScript Fundamentals
+                    </li>
+
+                    <li>
+                        Git & GitHub
+                    </li>
+
+                    <li>
+                        CyberSecurity Fortinet
+                    </li>
+
+                    <li>
+                        AWS Cloud Practitioner
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- =================================
+                 HABILIDADES
+            ================================== -->
+
+            <section class="side-section">
+
+                <div class="side-heading">
+
+                    <span class="side-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </span>
+
+                    <h2>
+                        HABILIDADES TÉCNICAS
+                    </h2>
+
+                </div>
+
+
+                <!-- LENGUAJES -->
+
+                <div class="skill-group">
+
+                    <h3>
+                        LENGUAJES
+                    </h3>
+
+
+                    <div class="skill-row">
+
+                        <span>PHP</span>
+
+                        <b>Avanzado</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>JavaScript</span>
+
+                        <b>Avanzado</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>TypeScript</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Python</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>C#</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>SQL</span>
+
+                        <b>Avanzado</b>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FRAMEWORKS -->
+
+                <div class="skill-group">
+
+                    <h3>
+                        FRAMEWORKS
+                    </h3>
+
+
+                    <div class="skill-row">
+
+                        <span>Laravel</span>
+
+                        <b>Avanzado</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>.NET</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Node.js</span>
+
+                        <b>Avanzado</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>NestJS</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Angular</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Tailwind CSS</span>
+
+                        <b>Intermedio</b>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 CLOUD & DEVOPS
+            ================================== -->
+
+            <section class="side-section">
+
+                <div class="side-heading">
+
+                    <span class="side-icon">
+
+                        <i class="fa-solid fa-cloud"></i>
+
+                    </span>
+
+                    <h2>
+                        CLOUD & DEVOPS
+                    </h2>
+
+                </div>
+
+
+                <div class="mini-cloud-grid">
+
+                    <span>
+                        AWS
+                    </span>
+
+                    <span>
+                        Docker
+                    </span>
+
+                    <span>
+                        Kubernetes
+                    </span>
+
+                    <span>
+                        GitHub Actions
+                    </span>
+
+                    <span>
+                        Nginx
+                    </span>
+
+                    <span>
+                        CloudWatch
+                    </span>
+
+                </div>
+
+            </section>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL CV
+        ====================================== -->
+
+        <section class="main-content">
+
+
+            <!-- =================================
+                 HEADER CV
+            ================================== -->
+
+            <header class="cv-header">
+
+
+                <span class="eyebrow">
+
+                    SOFTWARE ENGINEER
+
+                </span>
+
+
+                <h1>
+
+                    Eduin Amilcar
+
+                    <span>
+                        May Uc.
+                    </span>
+
+                </h1>
+
+
+                <h2>
+
+                    DESARROLLADOR DE SOFTWARE
+                    BACK-END / FULL STACK
+
+                </h2>
+
+
+                <!-- ESTADÍSTICAS -->
+
+                <div class="header-stats">
+
+
+                    <div>
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>
+
+                            <b>
+                                +5 años
+                            </b>
+
+                            <small>
+                                Experiencia
+                            </small>
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-server"></i>
+
+                        <span>
+
+                            <b>
+                                APIs
+                            </b>
+
+                            <small>
+                                Microservicios
+                            </small>
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-cloud"></i>
+
+                        <span>
+
+                            <b>
+                                AWS
+                            </b>
+
+                            <small>
+                                Cloud & DevOps
+                            </small>
+
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-diagram-project"></i>
+
+                        <span>
+
+                            <b>
+                                Escalable
+                            </b>
+
+                            <small>
+                                Arquitecturas
+                            </small>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 EXPERIENCIA
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="section-heading">
+
+                    <span>
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                    </span>
+
+
+                    <h2>
+                        EXPERIENCIA PROFESIONAL
+                    </h2>
+
+
+                    <div></div>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- =============================
+                         FUNDACIÓN
+                    ============================== -->
+
+                    <article class="job-card">
+
+                        <span class="timeline-dot"></span>
+
+
+                        <div class="job-top">
+
+                            <div>
+
+                                <h3>
+                                    DESARROLLADOR BACKEND
+                                </h3>
+
+                                <h4>
+                                    Fundación Rafael Dondé I.A.P.
+                                </h4>
+
+                            </div>
+
+
+                            <time>
+                                2025 – 2026
+                            </time>
+
+                        </div>
+
+
+                        <ul>
+
+                            <li>
+                                Desarrollo y mantenimiento
+                                de microservicios utilizando
+                                .NET, Node.js y NestJS.
+                            </li>
+
+                            <li>
+                                Diseño e implementación de
+                                APIs REST seguras,
+                                escalables y documentadas
+                                con Swagger/OpenAPI.
+                            </li>
+
+                            <li>
+                                Contenerización y despliegue
+                                mediante Docker
+                                y Docker Compose.
+                            </li>
+
+                            <li>
+                                Desarrollo de soluciones
+                                en AWS utilizando Lambda,
+                                API Gateway, S3, IAM,
+                                CloudWatch, EC2,
+                                RDS y CloudFront.
+                            </li>
+
+                            <li>
+                                Autenticación y autorización
+                                con JWT y OAuth2.
+                            </li>
+
+                            <li>
+                                Integración de servicios
+                                mediante RabbitMQ
+                                y arquitectura basada
+                                en eventos.
+                            </li>
+
+                            <li>
+                                Trabajo con GraphQL,
+                                Clean Architecture,
+                                GitHub Actions y Nginx.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tags">
+
+                            <span>.NET</span>
+
+                            <span>NestJS</span>
+
+                            <span>AWS</span>
+
+                            <span>Docker</span>
+
+                            <span>RabbitMQ</span>
+
+                            <span>GraphQL</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         TOYOTA
+                    ============================== -->
+
+                    <article class="job-card">
+
+                        <span class="timeline-dot"></span>
+
+
+                        <div class="job-top">
+
+                            <div>
+
+                                <h3>
+                                    DESARROLLADOR DE SOFTWARE
+                                </h3>
+
+                                <h4>
+                                    Toyota Mérida
+                                </h4>
+
+                            </div>
+
+
+                            <time>
+                                2023 – 2025
+                            </time>
+
+                        </div>
+
+
+                        <ul>
+
+                            <li>
+                                Análisis, desarrollo
+                                y gestión del proyecto
+                                CicloData.
+                            </li>
+
+                            <li>
+                                Migración del proyecto
+                                a GitHub y participación
+                                en procesos Scrum.
+                            </li>
+
+                            <li>
+                                Desarrollo con Laravel,
+                                JavaScript, PHP,
+                                AJAX y MySQL.
+                            </li>
+
+                            <li>
+                                Trabajo con procedimientos
+                                almacenados
+                                y módulos internos.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tags">
+
+                            <span>Laravel</span>
+
+                            <span>PHP</span>
+
+                            <span>JavaScript</span>
+
+                            <span>MySQL</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         BOMSSA
+                    ============================== -->
+
+                    <article class="job-card">
+
+                        <span class="timeline-dot"></span>
+
+
+                        <div class="job-top">
+
+                            <div>
+
+                                <h3>
+                                    PROGRAMADOR DE SOFTWARE
+                                </h3>
+
+                                <h4>
+                                    BOMSSA
+                                </h4>
+
+                            </div>
+
+
+                            <time>
+                                2021 – 2023
+                            </time>
+
+                        </div>
+
+
+                        <ul>
+
+                            <li>
+                                Desarrollo de sistemas internos
+                                para importaciones y pedidos.
+                            </li>
+
+                            <li>
+                                Integración de modelos
+                                y módulos de carteras.
+                            </li>
+
+                            <li>
+                                Lectura y peticiones
+                                SQL Server.
+                            </li>
+
+                            <li>
+                                Laravel, PHP,
+                                JavaScript, jQuery,
+                                AJAX y MySQL.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="tags">
+
+                            <span>Laravel</span>
+
+                            <span>SQL Server</span>
+
+                            <span>jQuery</span>
+
+                            <span>MySQL</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 COMPETENCIAS
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="section-heading">
+
+                    <span>
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                    </span>
+
+
+                    <h2>
+                        COMPETENCIAS CLAVE
+                    </h2>
+
+
+                    <div></div>
+
+                </div>
+
+
+                <div class="competencies">
+
+
+                    <div>
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <span>
+                            Desarrollo Back-End
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-server"></i>
+
+                        <span>
+                            APIs RESTful
+                            y Microservicios
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-puzzle-piece"></i>
+
+                        <span>
+                            Integración
+                            de Sistemas
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <span>
+                            Optimización
+                            de Bases de Datos
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-code-branch"></i>
+
+                        <span>
+                            Control
+                            de Versiones
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-arrows-rotate"></i>
+
+                        <span>
+                            Metodologías
+                            Ágiles
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 STACK
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="section-heading">
+
+                    <span>
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </span>
+
+
+                    <h2>
+                        STACK TECNOLÓGICO
+                    </h2>
+
+
+                    <div></div>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+
+                    <div>
+
+                        <i class="fa-brands fa-microsoft"></i>
+
+                        <span>
+                            .NET
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-c"></i>
+
+                        <span>
+                            C#
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-fire"></i>
+
+                        <span>
+                            NestJS
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-js"></i>
+
+                        <span>
+                            TypeScript
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-node-js"></i>
+
+                        <span>
+                            Node.js
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-laravel"></i>
+
+                        <span>
+                            Laravel
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-php"></i>
+
+                        <span>
+                            PHP
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-js"></i>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <span>
+                            SQL Server
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <span>
+                            MongoDB
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <span>
+                            Redis
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-aws"></i>
+
+                        <span>
+                            AWS
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-docker"></i>
+
+                        <span>
+                            Docker
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-dharmachakra"></i>
+
+                        <span>
+                            Kubernetes
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <span>
+                            GitHub Actions
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <span>
+                            RabbitMQ
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-share-nodes"></i>
+
+                        <span>
+                            GraphQL
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer no-export">
+
+        <div
+            class="
+                max-w-7xl
+                mx-auto
+                px-5
+                py-10
+
+                flex
+                flex-col
+
+                md:flex-row
+                md:items-center
+                md:justify-between
+
+                gap-5
+            "
+        >
+
+
+            <!-- INFORMACIÓN -->
+
+            <div>
+
+                <b>
+                    Eduin Amilcar May Uc.
+                </b>
+
+                <p>
+                    Mérida, Yucatán · Back-End / Full Stack
+                </p>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="flex gap-3">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-btn"
+                    href="mailto:eduin.may95@hotmail.com"
+                    aria-label="Correo"
+                >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="social-btn"
+                    href="https://github.com/edmay12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <!-- TELÉFONO -->
+
+                <a
+                    class="social-btn"
+                    href="tel:+529996130007"
+                    aria-label="Teléfono"
+                >
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         LIBRERÍAS PDF / PNG
+    ========================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js">
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js">
+    </script>
+
+
+    <!-- =========================================
+         JAVASCRIPT GLOBAL DEL PORTAFOLIO
+    ========================================== -->
+
+    <script src="app.js"></script>
+
+
+    <!-- =========================================
+         JAVASCRIPT CV
+    ========================================== -->
+
+    <script src="cv.js"></script>
+
+</body>
+
+</html>

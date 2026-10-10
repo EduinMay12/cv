@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Hobbies | Eduin May</title>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <!-- TAILWIND -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS GENERAL -->
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+<!-- =========================================
+     FONDO LIQUID GLASS
+========================================== -->
+
+<div class="orb orb-a"></div>
+<div class="orb orb-b"></div>
+
+
+<!-- =========================================
+     HEADER
+========================================== -->
+
+<header class="site-header">
+
+    <div class="max-w-7xl mx-auto px-5">
+
+        <nav class="glass-nav">
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <span class="brand-mark">
+
+                    <img
+                        src="foto.jpeg"
+                        alt="Eduin May"
+                        class="brand-logo"
+                    >
+
+                </span>
+
+                <span>
+
+                    <b>Eduin May</b>
+
+                    <small>
+                        Software Engineer
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE -->
+
+            <button
+                id="menuButton"
+                class="nav-icon lg:hidden"
+                aria-label="Abrir menú"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- MENÚ -->
+
+            <div
+                id="mainMenu"
+                class="main-menu"
+            >
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="tecnologias.html">
+                    Tecnologías
+                </a>
+
+                <a href="experiencia.html">
+                    Experiencia
+                </a>
+
+                <a href="proyectos.html">
+                    Proyectos
+                </a>
+
+                <a href="certificaciones.html">
+                    Certificaciones
+                </a>
+
+                <a href="competencias.html">
+                    Competencias
+                </a>
+
+                <a href="hobbies.html">
+                    Hobbies
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+                <a href="social.html">
+                    Redes Sociales
+                </a>
+
+                <a href="cv.html">
+                    CV
+                </a>
+
+            </div>
+
+
+            <!-- DARK MODE -->
+
+            <button
+                id="themeToggle"
+                class="nav-icon"
+                aria-label="Cambiar tema"
+            >
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     CONTENIDO
+========================================== -->
+
+<main class="wrap page">
+
+
+    <!-- =====================================
+         INTRODUCCIÓN
+    ====================================== -->
+
+    <section class="hobbies-intro">
+
+        <span class="eyebrow">
+
+            <i class="fa-solid fa-heart"></i>
+
+            MÁS ALLÁ DEL CÓDIGO
+
+        </span>
+
+
+        <h1 class="page-title">
+
+            Mis hobbies también forman
+            <span class="hobby-gradient">
+                parte de quién soy.
+            </span>
+
+        </h1>
+
+
+        <p class="lead">
+
+            Cuando no estoy desarrollando software,
+            disfruto descubrir música, correr,
+            jugar videojuegos, conocer nuevos lugares,
+            probar restaurantes, visitar la playa
+            y dedicar tiempo al bienestar físico y mental.
+
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         HOBBIES
+    ====================================== -->
+
+    <section class="section">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    INTERESES PERSONALES
+                </span>
+
+                <h2>
+                    Lo que disfruto hacer
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="hobbies-grid mt-8">
+
+
+            <!-- MÚSICA -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image music-bg">
+
+                    <i class="fa-solid fa-headphones"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Escuchar música
+                    </h3>
+
+                    <p>
+                        La música es parte de mis momentos
+                        de concentración, descanso y creatividad.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Playlists</span>
+                        <span>Discover</span>
+                        <span>Focus</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- RUNNING -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image running-bg">
+
+                    <i class="fa-solid fa-person-running"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Running
+                    </h3>
+
+                    <p>
+                        Correr me ayuda a mantener disciplina,
+                        energía y despejar la mente.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Running</span>
+                        <span>Fitness</span>
+                        <span>Disciplina</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VIDEOJUEGOS -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image gaming-bg">
+
+                    <i class="fa-solid fa-gamepad"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Videojuegos
+                    </h3>
+
+                    <p>
+                        Disfruto explorar mundos,
+                        historias y mecánicas dentro
+                        de diferentes videojuegos.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Gaming</span>
+                        <span>Strategy</span>
+                        <span>Adventure</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PASEAR -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image travel-bg">
+
+                    <i class="fa-solid fa-route"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Salir a pasear
+                    </h3>
+
+                    <p>
+                        Me gusta conocer lugares,
+                        caminar y descubrir nuevos
+                        espacios y experiencias.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Explore</span>
+                        <span>Travel</span>
+                        <span>Walk</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- RESTAURANTES -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image food-bg">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Restaurantes
+                    </h3>
+
+                    <p>
+                        Conocer restaurantes y probar
+                        diferentes propuestas gastronómicas
+                        es una de mis actividades favoritas.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Food</span>
+                        <span>Places</span>
+                        <span>Experience</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PLAYA -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image beach-bg">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Playa de noche
+                    </h3>
+
+                    <p>
+                        Disfruto especialmente la tranquilidad
+                        de la playa durante la noche y
+                        desconectarme del ritmo cotidiano.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Beach</span>
+                        <span>Night</span>
+                        <span>Relax</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- YOGA -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image yoga-bg">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        07
+                    </span>
+
+                    <h3>
+                        Yoga
+                    </h3>
+
+                    <p>
+                        Un espacio para trabajar movilidad,
+                        concentración, respiración
+                        y equilibrio.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Yoga</span>
+                        <span>Balance</span>
+                        <span>Focus</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- TECNOLOGÍA -->
+
+            <article class="hobby-card">
+
+                <div class="hobby-image tech-bg">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <span class="hobby-number">
+                        08
+                    </span>
+
+                    <h3>
+                        Proyectos personales
+                    </h3>
+
+                    <p>
+                        También disfruto experimentar
+                        con nuevas tecnologías y convertir
+                        ideas personales en software.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Code</span>
+                        <span>Ideas</span>
+                        <span>Build</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PROYECTOS POR HOBBY
+    ====================================== -->
+
+    <section class="section hobby-project-section">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    PERSONAL LAB
+
+                </span>
+
+                <h2>
+                    Proyectos por hobby
+                </h2>
+
+                <p class="lead">
+
+                    Ideas y proyectos personales donde
+                    combino mis intereses con desarrollo
+                    de software y experimentación.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="hobby-projects mt-10">
+
+
+            <!-- PROYECTO 1 -->
+
+            <article class="hobby-project">
+
+                <div class="hobby-project-visual project-music">
+
+                    <div class="project-floating-icon">
+
+                        <i class="fa-solid fa-music"></i>
+
+                    </div>
+
+                    <span>
+                        MUSIC
+                    </span>
+
+                </div>
+
+
+                <div class="hobby-project-info">
+
+                    <span class="tag">
+                        Música + Software
+                    </span>
+
+                    <h3>
+                        Music Discovery
+                    </h3>
+
+                    <p>
+                        Concepto de aplicación para organizar
+                        música, descubrir canciones y crear
+                        colecciones personales.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>API</span>
+                        <span>Laravel</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROYECTO 2 -->
+
+            <article class="hobby-project">
+
+                <div class="hobby-project-visual project-running">
+
+                    <div class="project-floating-icon">
+
+                        <i class="fa-solid fa-person-running"></i>
+
+                    </div>
+
+                    <span>
+                        RUN
+                    </span>
+
+                </div>
+
+
+                <div class="hobby-project-info">
+
+                    <span class="tag">
+                        Running + Data
+                    </span>
+
+                    <h3>
+                        Running Tracker
+                    </h3>
+
+                    <p>
+                        Dashboard personal para registrar
+                        distancias, tiempos, ritmo y progreso
+                        durante entrenamientos.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Dashboard</span>
+                        <span>Charts</span>
+                        <span>API</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROYECTO 3 -->
+
+            <article class="hobby-project">
+
+                <div class="hobby-project-visual project-gaming">
+
+                    <div class="project-floating-icon">
+
+                        <i class="fa-solid fa-gamepad"></i>
+
+                    </div>
+
+                    <span>
+                        GAMING
+                    </span>
+
+                </div>
+
+
+                <div class="hobby-project-info">
+
+                    <span class="tag">
+                        Gaming + Development
+                    </span>
+
+                    <h3>
+                        Gaming Library
+                    </h3>
+
+                    <p>
+                        Biblioteca personal para organizar
+                        videojuegos terminados, pendientes,
+                        favoritos y próximos lanzamientos.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROYECTO 4 -->
+
+            <article class="hobby-project">
+
+                <div class="hobby-project-visual project-food">
+
+                    <div class="project-floating-icon">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                    </div>
+
+                    <span>
+                        FOOD
+                    </span>
+
+                </div>
+
+
+                <div class="hobby-project-info">
+
+                    <span class="tag">
+                        Restaurantes + Maps
+                    </span>
+
+                    <h3>
+                        Places Collection
+                    </h3>
+
+                    <p>
+                        Aplicación para guardar restaurantes
+                        y lugares visitados, calificarlos y
+                        crear una colección personal.
+                    </p>
+
+                    <div class="chips">
+
+                        <span>Maps</span>
+                        <span>API</span>
+                        <span>MySQL</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FRASE FINAL
+    ====================================== -->
+
+    <section class="hobby-quote">
+
+        <i class="fa-solid fa-code"></i>
+
+        <h2>
+            No todo es código.
+        </h2>
+
+        <p>
+            Pero casi cualquier interés puede convertirse
+            en una buena idea para construir algo.
+        </p>
+
+        <a
+            href="proyectos.html"
+            class="btn-primary"
+        >
+
+            Ver proyectos profesionales
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div
+        class="
+            max-w-7xl
+            mx-auto
+            px-5
+            py-10
+            flex
+            flex-col
+            md:flex-row
+            md:items-center
+            md:justify-between
+            gap-5
+        "
+    >
+
+        <div>
+
+            <b>
+                Eduin Amilcar May Uc.
+            </b>
+
+            <p>
+                Mérida, Yucatán · Back-End / Full Stack
+            </p>
+
+        </div>
+
+
+        <div class="flex gap-3">
+
+            <a
+                class="social-btn"
+                href="mailto:eduin.may95@hotmail.com"
+            >
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a
+                class="social-btn"
+                href="https://github.com/edmay12"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+                class="social-btn"
+                href="tel:+529996130007"
+            >
+                <i class="fa-solid fa-phone"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contacto | Eduin May</title>
+
+
+    <!-- =========================================
+         TAILWIND
+    ========================================== -->
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS PERSONALIZADO
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         FONDO LIQUID GLASS
+    ========================================== -->
+
+    <div class="orb orb-a"></div>
+
+    <div class="orb orb-b"></div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <nav class="glass-nav">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        <img
+                            src="foto.jpeg"
+                            alt="Logo Eduin May"
+                            class="brand-logo"
+                        >
+                    </span>
+
+                    <span>
+
+                        <b>
+                            Eduin May
+                        </b>
+
+                        <small>
+                            Software Engineer
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <!-- MENÚ MÓVIL -->
+
+                <button
+                    id="menuButton"
+                    class="nav-icon lg:hidden"
+                    aria-label="Abrir menú"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <!-- NAVEGACIÓN -->
+
+                <div
+                    id="mainMenu"
+                    class="main-menu"
+                >
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="tecnologias.html">
+                        Tecnologías
+                    </a>
+
+                    <a href="experiencia.html">
+                        Experiencia
+                    </a>
+
+                    <a href="proyectos.html">
+                        Proyectos
+                    </a>
+
+                    <a href="certificaciones.html">
+                        Certificaciones
+                    </a>
+
+                    <a href="competencias.html">
+                        Competencias
+                    </a>
+
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+                    
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+
+                    <a href="social.html">
+                        Redes Sociales
+                    </a>
+                    
+  					<a href="cv.html">
+                        CV
+                    </a>
+
+                </div>
+
+
+                <!-- MODO OSCURO -->
+
+                <button
+                    id="themeToggle"
+                    class="nav-icon"
+                    aria-label="Cambiar tema"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO
+    ========================================== -->
+
+    <main class="wrap page">
+
+        <div
+            class="
+                grid
+                lg:grid-cols-[.85fr_1.15fr]
+                gap-8
+                lg:gap-12
+                items-start
+            "
+        >
+
+
+            <!-- =================================
+                 INFORMACIÓN DE CONTACTO
+            ================================== -->
+
+            <section>
+
+
+                <span class="eyebrow">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    CONTACTO
+
+                </span>
+
+
+                <h1 class="page-title">
+
+                    Hablemos de tu
+                    próxima solución.
+
+                </h1>
+
+
+                <p class="lead">
+
+                    Disponible para oportunidades laborales,
+                    proyectos backend/full-stack,
+                    desarrollo de APIs,
+                    automatización,
+                    integraciones y soluciones cloud.
+
+                </p>
+
+
+                <!-- CONTACTOS -->
+
+                <div class="contact-list mt-10">
+
+
+                    <!-- EMAIL -->
+
+                    <a href="mailto:eduin.may95@hotmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <small>
+                                Correo electrónico
+                            </small>
+
+                            <b>
+                                eduin.may95@hotmail.com
+                            </b>
+
+                        </div>
+
+                        <i
+                            class="
+                                fa-solid
+                                fa-arrow-up-right-from-square
+                                contact-arrow
+                            "
+                        ></i>
+
+                    </a>
+
+
+                    <!-- TELÉFONO -->
+
+                    <a href="tel:+529996130007">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <small>
+                                Teléfono
+                            </small>
+
+                            <b>
+                                (999) 613 0007
+                            </b>
+
+                        </div>
+
+                        <i
+                            class="
+                                fa-solid
+                                fa-arrow-up-right-from-square
+                                contact-arrow
+                            "
+                        ></i>
+
+                    </a>
+
+
+                    <!-- GITHUB -->
+
+                    <a
+                        href="https://github.com/edmay12"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <div>
+
+                            <small>
+                                GitHub
+                            </small>
+
+                            <b>
+                                github.com/edmay12
+                            </b>
+
+                        </div>
+
+                        <i
+                            class="
+                                fa-solid
+                                fa-arrow-up-right-from-square
+                                contact-arrow
+                            "
+                        ></i>
+
+                    </a>
+
+
+                    <!-- UBICACIÓN -->
+
+                    <div>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <small>
+                                Ubicación
+                            </small>
+
+                            <b>
+                                Mérida, Yucatán, México
+                            </b>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     DISPONIBILIDAD
+                ================================== -->
+
+                <div
+                    class="
+                        glass-card
+                        mt-8
+                        availability-contact
+                    "
+                >
+
+                    <div class="availability-status">
+
+                        <span class="status-dot"></span>
+
+                        <div>
+
+                            <strong>
+                                Disponible para nuevos retos
+                            </strong>
+
+                            <small>
+                                Backend · Full Stack · Cloud · Integraciones
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =================================
+                 FORMULARIO
+            ================================== -->
+
+            <section>
+
+                <form
+                    id="contactForm"
+                    class="glass-card form"
+                >
+
+
+                    <!-- CABECERA -->
+
+                    <div class="form-header">
+
+                        <div class="form-icon">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Envíame un mensaje
+                            </h2>
+
+                            <p>
+                                Cuéntame sobre la oportunidad,
+                                proyecto o solución que necesitas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOMBRE / CORREO -->
+
+                    <div
+                        class="
+                            grid
+                            sm:grid-cols-2
+                            gap-4
+                        "
+                    >
+
+
+                        <!-- NOMBRE -->
+
+                        <label>
+
+                            <span>
+                                Nombre
+                            </span>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    id="contactName"
+                                    type="text"
+                                    placeholder="Tu nombre"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </label>
+
+
+                        <!-- CORREO -->
+
+                        <label>
+
+                            <span>
+                                Correo
+                            </span>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <input
+                                    id="contactEmail"
+                                    type="email"
+                                    placeholder="correo@ejemplo.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- ASUNTO -->
+
+                    <label>
+
+                        <span>
+                            Asunto
+                        </span>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                            <input
+                                id="contactSubject"
+                                type="text"
+                                placeholder="Vacante, proyecto, colaboración..."
+                                required
+                            >
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- MENSAJE -->
+
+                    <label>
+
+                        <span>
+                            Mensaje
+                        </span>
+
+                        <div
+                            class="
+                                input-wrapper
+                                textarea-wrapper
+                            "
+                        >
+
+                            <i class="fa-solid fa-message"></i>
+
+                            <textarea
+                                id="contactMessage"
+                                rows="8"
+                                placeholder="Escribe tu mensaje..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- BOTÓN -->
+
+                    <button
+                        class="
+                            btn-primary
+                            justify-center
+                            w-full
+                        "
+                        type="submit"
+                    >
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Preparar correo
+
+                    </button>
+
+
+                    <!-- INFORMACIÓN -->
+
+                    <p class="hint">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        El formulario abrirá tu aplicación
+                        de correo con el mensaje preparado.
+
+                    </p>
+
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div
+            class="
+                max-w-7xl
+                mx-auto
+                px-5
+                py-10
+
+                flex
+                flex-col
+
+                md:flex-row
+                md:items-center
+                md:justify-between
+
+                gap-5
+            "
+        >
+
+
+            <!-- INFORMACIÓN -->
+
+            <div>
+
+                <b>
+                    Eduin Amilcar May Uc.
+                </b>
+
+                <p>
+                    Mérida, Yucatán · Back-End / Full Stack
+                </p>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="flex gap-3">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-btn"
+                    href="mailto:eduin.may95@hotmail.com"
+                    aria-label="Correo"
+                >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="social-btn"
+                    href="https://github.com/edmay12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <!-- TELÉFONO -->
+
+                <a
+                    class="social-btn"
+                    href="tel:+529996130007"
+                    aria-label="Teléfono"
+                >
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

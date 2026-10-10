@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Competencias | Eduin May
+    </title>
+
+
+    <!-- =========================================
+         TAILWIND CSS
+    ========================================== -->
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS PERSONALIZADO
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         EFECTOS DE FONDO
+    ========================================== -->
+
+    <div class="orb orb-a"></div>
+
+    <div class="orb orb-b"></div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <nav class="glass-nav">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        <img
+                            src="foto.jpeg"
+                            alt="Logo Eduin May"
+                            class="brand-logo"
+                        >
+                    </span>
+
+                    <span>
+
+                        <b>
+                            Eduin May
+                        </b>
+
+                        <small>
+                            Software Engineer
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <!-- MENÚ MOBILE -->
+
+                <button
+                    id="menuButton"
+                    class="nav-icon lg:hidden"
+                    aria-label="Abrir menú"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <!-- NAVEGACIÓN -->
+
+                <div
+                    id="mainMenu"
+                    class="main-menu"
+                >
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="tecnologias.html">
+                        Tecnologías
+                    </a>
+
+                    <a href="experiencia.html">
+                        Experiencia
+                    </a>
+
+                    <a href="proyectos.html">
+                        Proyectos
+                    </a>
+
+                    <a href="certificaciones.html">
+                        Certificaciones
+                    </a>
+
+                    <a href="competencias.html">
+                        Competencias
+                    </a>
+
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+                    
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+
+                    <a href="social.html">
+                        Redes Sociales
+                    </a>
+                    
+                     <a href="cv.html">
+                        CV
+                    </a>
+
+                </div>
+
+
+                <!-- MODO OSCURO -->
+
+                <button
+                    id="themeToggle"
+                    class="nav-icon"
+                    aria-label="Cambiar modo claro/oscuro"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="wrap page">
+
+
+        <!-- ENCABEZADO -->
+
+        <span class="eyebrow">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            COMPETENCIAS
+
+        </span>
+
+
+        <h1 class="page-title">
+
+            Capacidad técnica,
+            criterio y colaboración.
+
+        </h1>
+
+
+        <p class="lead">
+
+            Diseño soluciones mantenibles,
+            entiendo el problema y trabajo
+            con equipos multidisciplinarios
+            para construir productos sólidos,
+            escalables y orientados al negocio.
+
+        </p>
+
+
+        <!-- =====================================
+             GRID DE COMPETENCIAS
+        ====================================== -->
+
+        <div
+            class="
+                cert-grid
+                mt-12
+            "
+        >
+
+
+            <!-- =================================
+                 BACKEND
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-code
+                    "
+                ></i>
+
+
+                <h2>
+                    Desarrollo Back-End
+                </h2>
+
+
+                <p>
+
+                    Desarrollo de lógica de negocio,
+                    servicios y aplicaciones con
+                    Laravel, PHP, .NET,
+                    Node.js y NestJS.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 APIs
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-server
+                    "
+                ></i>
+
+
+                <h2>
+                    APIs & Microservicios
+                </h2>
+
+
+                <p>
+
+                    Diseño e implementación de
+                    APIs REST, GraphQL,
+                    autenticación, mensajería
+                    y arquitecturas distribuidas.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 INTEGRACIÓN
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-puzzle-piece
+                    "
+                ></i>
+
+
+                <h2>
+                    Integración de Sistemas
+                </h2>
+
+
+                <p>
+
+                    Integración de aplicaciones,
+                    servicios externos,
+                    bases de datos y procesos
+                    entre diferentes plataformas.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 BASES DE DATOS
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-database
+                    "
+                ></i>
+
+
+                <h2>
+                    Optimización de Datos
+                </h2>
+
+
+                <p>
+
+                    Modelado de datos,
+                    consultas SQL,
+                    optimización de rendimiento
+                    y administración de bases
+                    relacionales y documentales.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 VERSIONADO
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-code-branch
+                    "
+                ></i>
+
+
+                <h2>
+                    Control de Versiones
+                </h2>
+
+
+                <p>
+
+                    Gestión de código con
+                    Git y GitHub,
+                    ramas, commits,
+                    revisión de cambios
+                    y flujos colaborativos.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 TRABAJO EN EQUIPO
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-users
+                    "
+                ></i>
+
+
+                <h2>
+                    Trabajo en Equipo
+                </h2>
+
+
+                <p>
+
+                    Comunicación técnica,
+                    colaboración multidisciplinaria,
+                    documentación y participación
+                    en metodologías ágiles.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 SOLUCIÓN DE PROBLEMAS
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-lightbulb
+                    "
+                ></i>
+
+
+                <h2>
+                    Solución de Problemas
+                </h2>
+
+
+                <p>
+
+                    Análisis de incidencias,
+                    diagnóstico técnico,
+                    depuración de errores
+                    y diseño de soluciones
+                    eficientes.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 APRENDIZAJE
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-arrow-trend-up
+                    "
+                ></i>
+
+
+                <h2>
+                    Aprendizaje Continuo
+                </h2>
+
+
+                <p>
+
+                    Adaptación rápida a nuevas
+                    tecnologías, herramientas,
+                    arquitecturas y necesidades
+                    de negocio.
+
+                </p>
+
+            </article>
+
+
+            <!-- =================================
+                 CLOUD & DEVOPS
+            ================================== -->
+
+            <article class="glass-card">
+
+                <i
+                    class="
+                        feature
+                        fa-solid
+                        fa-cloud
+                    "
+                ></i>
+
+
+                <h2>
+                    Cloud & DevOps
+                </h2>
+
+
+                <p>
+
+                    Experiencia con AWS,
+                    Docker, GitHub Actions,
+                    Nginx, CI/CD
+                    y despliegues de aplicaciones.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div
+            class="
+                max-w-7xl
+                mx-auto
+                px-5
+                py-10
+
+                flex
+                flex-col
+
+                md:flex-row
+                md:items-center
+                md:justify-between
+
+                gap-5
+            "
+        >
+
+
+            <!-- INFORMACIÓN -->
+
+            <div>
+
+                <b>
+                    Eduin Amilcar May Uc.
+                </b>
+
+                <p>
+                    Mérida, Yucatán · Back-End / Full Stack
+                </p>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="flex gap-3">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-btn"
+                    href="mailto:eduin.may95@hotmail.com"
+                    aria-label="Enviar correo"
+                >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="social-btn"
+                    href="https://github.com/edmay12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <!-- TELÉFONO -->
+
+                <a
+                    class="social-btn"
+                    href="tel:+529996130007"
+                    aria-label="Llamar"
+                >
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

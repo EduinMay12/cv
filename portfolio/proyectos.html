@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Proyectos | Eduin May
+    </title>
+
+
+    <!-- =========================================
+         TAILWIND
+    ========================================== -->
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS PERSONALIZADO
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         EFECTOS DE FONDO
+    ========================================== -->
+
+    <div class="orb orb-a"></div>
+
+    <div class="orb orb-b"></div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <nav class="glass-nav">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        <img
+                            src="foto.jpeg"
+                            alt="Logo Eduin May"
+                            class="brand-logo"
+                        >
+                    </span>
+                    
+                    <span>
+
+                        <b>
+                            Eduin May
+                        </b>
+
+                        <small>
+                            Software Engineer
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <!-- MENÚ MOBILE -->
+
+                <button
+                    id="menuButton"
+                    class="nav-icon lg:hidden"
+                    aria-label="Abrir menú"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <!-- NAVEGACIÓN -->
+
+                <div
+                    id="mainMenu"
+                    class="main-menu"
+                >
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="tecnologias.html">
+                        Tecnologías
+                    </a>
+
+                    <a href="experiencia.html">
+                        Experiencia
+                    </a>
+
+                    <a href="proyectos.html">
+                        Proyectos
+                    </a>
+
+                    <a href="certificaciones.html">
+                        Certificaciones
+                    </a>
+
+                    <a href="competencias.html">
+                        Competencias
+                    </a>
+
+                    <a href="hobbies.html">
+                        Hobbies
+                    </a>
+                    
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+
+                    <a href="social.html">
+                        Redes Sociales
+                    </a>
+                    
+                    <a href="cv.html">
+                        CV
+                    </a>
+
+                </div>
+
+
+                <!-- MODO OSCURO -->
+
+                <button
+                    id="themeToggle"
+                    class="nav-icon"
+                    aria-label="Cambiar modo claro/oscuro"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="wrap page">
+
+
+        <!-- ENCABEZADO -->
+
+        <span class="eyebrow">
+
+            <i class="fa-solid fa-diagram-project"></i>
+
+            PROYECTOS
+
+        </span>
+
+
+        <h1 class="page-title">
+
+            Productos,
+            sistemas internos
+            e integraciones.
+
+        </h1>
+
+
+        <p class="lead">
+
+            Selección de proyectos desarrollados
+            en diferentes contextos empresariales,
+            enfocados en automatización,
+            gestión de información,
+            arquitectura back-end,
+            APIs e integración de sistemas.
+
+        </p>
+
+
+        <!-- =====================================
+             CARRUSEL DE PROYECTOS
+        ====================================== -->
+
+        <div
+            class="
+                carousel
+                large
+                mt-12
+            "
+            data-carousel
+        >
+
+
+            <!-- ANTERIOR -->
+
+            <button
+                data-prev
+                class="car-btn left"
+                aria-label="Proyecto anterior"
+            >
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <!-- TRACK -->
+
+            <div
+                class="track"
+                data-track
+            >
+
+
+                <!-- =================================
+                     PROYECTO 1
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-img p1">
+
+                        <i class="fa-solid fa-route"></i>
+
+                        <b>
+                            CicloData
+                        </b>
+
+                    </div>
+
+
+                    <div class="p-7">
+
+                        <span class="tag">
+                            Toyota Mérida
+                        </span>
+
+
+                        <h2>
+                            CicloData
+                        </h2>
+
+
+                        <p>
+
+                            Aplicación empresarial desarrollada
+                            para apoyar procesos internos,
+                            centralizar información y mejorar
+                            el flujo de trabajo operativo.
+
+                        </p>
+
+
+                        <div class="chips">
+
+                            <span>
+                                Laravel
+                            </span>
+
+                            <span>
+                                PHP
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                MySQL
+                            </span>
+
+                            <span>
+                                GitHub
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================
+                     PROYECTO 2
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-img p2">
+
+                        <i class="fa-solid fa-boxes-packing"></i>
+
+                        <b>
+                            Importaciones
+                        </b>
+
+                    </div>
+
+
+                    <div class="p-7">
+
+                        <span class="tag">
+                            BOMSSA
+                        </span>
+
+
+                        <h2>
+                            Importaciones y Pedidos
+                        </h2>
+
+
+                        <p>
+
+                            Sistema interno orientado a
+                            la administración de pedidos,
+                            procesos de importación,
+                            módulos de carteras
+                            y consulta de información.
+
+                        </p>
+
+
+                        <div class="chips">
+
+                            <span>
+                                Laravel
+                            </span>
+
+                            <span>
+                                PHP
+                            </span>
+
+                            <span>
+                                SQL Server
+                            </span>
+
+                            <span>
+                                MySQL
+                            </span>
+
+                            <span>
+                                jQuery
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================
+                     PROYECTO 3
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-img p3">
+
+                        <i class="fa-solid fa-network-wired"></i>
+
+                        <b>
+                            Microservicios
+                        </b>
+
+                    </div>
+
+
+                    <div class="p-7">
+
+                        <span class="tag">
+                            Backend
+                        </span>
+
+
+                        <h2>
+                            Servicios Distribuidos
+                        </h2>
+
+
+                        <p>
+
+                            Desarrollo de servicios back-end
+                            distribuidos mediante .NET,
+                            Node.js y NestJS,
+                            utilizando autenticación,
+                            mensajería, contenedores
+                            y servicios cloud.
+
+                        </p>
+
+
+                        <div class="chips">
+
+                            <span>
+                                .NET
+                            </span>
+
+                            <span>
+                                C#
+                            </span>
+
+                            <span>
+                                Node.js
+                            </span>
+
+                            <span>
+                                NestJS
+                            </span>
+
+                            <span>
+                                Docker
+                            </span>
+
+                            <span>
+                                AWS
+                            </span>
+
+                            <span>
+                                RabbitMQ
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================
+                     PROYECTO 4
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-img p4">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <b>
+                            Reporte Técnico
+                        </b>
+
+                    </div>
+
+
+                    <div class="p-7">
+
+                        <span class="tag">
+                            UTP
+                        </span>
+
+
+                        <h2>
+                            Plataforma de Reporte Técnico
+                        </h2>
+
+
+                        <p>
+
+                            Plataforma web desarrollada
+                            con Laravel para apoyar
+                            la automatización de procesos,
+                            gestión de información
+                            y atención a usuarios.
+
+                        </p>
+
+
+                        <div class="chips">
+
+                            <span>
+                                Laravel
+                            </span>
+
+                            <span>
+                                PHP
+                            </span>
+
+                            <span>
+                                MySQL
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                jQuery
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- SIGUIENTE -->
+
+            <button
+                data-next
+                class="car-btn right"
+                aria-label="Proyecto siguiente"
+            >
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             ÁREAS DE PROYECTOS
+        ====================================== -->
+
+        <section class="mt-16">
+
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="eyebrow">
+                        ENFOQUE
+                    </span>
+
+                    <h2>
+                        Cómo construyo las soluciones
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="
+                    grid
+                    md:grid-cols-2
+                    lg:grid-cols-4
+                    gap-4
+                    mt-8
+                "
+            >
+
+
+                <!-- ARQUITECTURA -->
+
+                <article class="glass-card">
+
+                    <i
+                        class="
+                            feature
+                            fa-solid
+                            fa-sitemap
+                        "
+                    ></i>
+
+                    <h3>
+                        Arquitectura
+                    </h3>
+
+                    <p>
+
+                        Diseño de servicios,
+                        separación de responsabilidades,
+                        Clean Architecture
+                        y microservicios.
+
+                    </p>
+
+                </article>
+
+
+                <!-- SEGURIDAD -->
+
+                <article class="glass-card">
+
+                    <i
+                        class="
+                            feature
+                            fa-solid
+                            fa-shield-halved
+                        "
+                    ></i>
+
+                    <h3>
+                        Seguridad
+                    </h3>
+
+                    <p>
+
+                        Implementación de JWT,
+                        OAuth2, permisos,
+                        autenticación
+                        y protección de APIs.
+
+                    </p>
+
+                </article>
+
+
+                <!-- INTEGRACIONES -->
+
+                <article class="glass-card">
+
+                    <i
+                        class="
+                            feature
+                            fa-solid
+                            fa-plug
+                        "
+                    ></i>
+
+                    <h3>
+                        Integraciones
+                    </h3>
+
+                    <p>
+
+                        APIs REST,
+                        GraphQL,
+                        RabbitMQ
+                        y comunicación
+                        entre diferentes sistemas.
+
+                    </p>
+
+                </article>
+
+
+                <!-- DEPLOY -->
+
+                <article class="glass-card">
+
+                    <i
+                        class="
+                            feature
+                            fa-solid
+                            fa-rocket
+                        "
+                    ></i>
+
+                    <h3>
+                        Deploy & Cloud
+                    </h3>
+
+                    <p>
+
+                        Docker,
+                        AWS,
+                        GitHub Actions,
+                        Nginx
+                        y procesos CI/CD.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div
+            class="
+                max-w-7xl
+                mx-auto
+                px-5
+                py-10
+
+                flex
+                flex-col
+
+                md:flex-row
+                md:items-center
+                md:justify-between
+
+                gap-5
+            "
+        >
+
+
+            <!-- INFORMACIÓN -->
+
+            <div>
+
+                <b>
+                    Eduin Amilcar May Uc.
+                </b>
+
+                <p>
+                    Mérida, Yucatán · Back-End / Full Stack
+                </p>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="flex gap-3">
+
+
+                <!-- CORREO -->
+
+                <a
+                    class="social-btn"
+                    href="mailto:eduin.may95@hotmail.com"
+                    aria-label="Enviar correo"
+                >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="social-btn"
+                    href="https://github.com/edmay12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <!-- TELÉFONO -->
+
+                <a
+                    class="social-btn"
+                    href="tel:+529996130007"
+                    aria-label="Teléfono"
+                >
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

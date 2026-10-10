@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eduin Amilcar May Uc - CV</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Librerías para exportar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<!-- =========================================================
+     BOTONES FLOTANTES
+========================================================= -->
+
+<div class="floating-actions">
+
+    <button
+        class="floating-btn btn-png"
+        id="downloadPng"
+        title="Descargar CV en PNG"
+    >
+        <i class="fa-solid fa-image"></i>
+        <span>PNG</span>
+    </button>
+
+    <button
+        class="floating-btn btn-pdf"
+        id="downloadPdf"
+        title="Descargar CV en PDF"
+    >
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>PDF</span>
+    </button>
+
+</div>
+
+
+<!-- =========================================================
+     CV
+========================================================= -->
+
+<div class="page" id="cv">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="photo-wrap">
+            <img
+                src="foto.jpeg"
+                alt="Foto de perfil"
+                id="profilePhoto"
+            >
+        </div>
+
+
+        <!-- PERFIL -->
+
+        <div class="side-section">
+
+            <div class="side-title">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                PERFIL PROFESIONAL
+            </div>
+
+            <p class="side-text">
+                Desarrollador de software con más de 5 años de experiencia
+                creando aplicaciones web robustas y escalables con Laravel
+                y MySQL. Especializado en desarrollo back-end, automatización
+                de procesos, integración de sistemas y arquitectura de
+                microservicios. Enfocado en escribir código limpio,
+                aplicando buenas prácticas, pruebas y metodologías ágiles.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACTO -->
+
+        <div class="side-section">
+
+            <div class="side-title">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                CONTACTO
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>eduin.may95@hotmail.com</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>(999) 613 - 0007</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Mérida, Yucatán, México</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <span>github.com/EduinMay95</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>linkedin.com/in/eduin-amilcar-may</span>
+            </div>
+
+        </div>
+
+
+        <!-- EDUCACIÓN -->
+
+        <div class="side-section">
+
+            <div class="side-title">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                EDUCACIÓN
+            </div>
+
+            <div class="edu-item">
+
+                <div class="edu-degree">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    Universidad Tecnológica del Poniente
+                </div>
+
+                <div>
+                    UTP | Universidad Tecnológica del Poniente
+                </div>
+
+                <div class="edu-date">
+                    <i class="fa-solid fa-calendar"></i>
+                    2017 - 2021
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CERTIFICACIONES -->
+
+        <div class="side-section">
+
+            <div class="side-title">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-award"></i>
+                </span>
+                CERTIFICACIONES
+            </div>
+
+            <div class="cert-item">
+                <i class="fa-solid fa-check"></i>
+                Scrum Foundation Professional Certificate
+            </div>
+
+            <div class="cert-item">
+                <i class="fa-solid fa-check"></i>
+                HTML, CSS, JavaScript Fundamentals
+            </div>
+
+            <div class="cert-item">
+                <i class="fa-solid fa-check"></i>
+                Git &amp; GitHub
+            </div>
+
+            <div class="cert-item">
+                <i class="fa-solid fa-check"></i>
+                AWS Cloud Practitioner
+            </div>
+
+        </div>
+
+
+        <!-- TECNOLOGÍAS -->
+
+        <div class="side-section">
+
+            <div class="side-title">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-display"></i>
+                </span>
+                TECNOLOGÍAS
+            </div>
+
+
+            <!-- LENGUAJES -->
+
+            <div class="tech-group">
+
+                <h4>LENGUAJES</h4>
+
+                <div class="tech-row">
+                    PHP
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    JavaScript
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    TypeScript
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    Python
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    SQL
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- FRAMEWORKS -->
+
+            <div class="tech-group">
+
+                <h4>FRAMEWORKS / LIBRERÍAS</h4>
+
+                <div class="tech-row">
+                    Laravel
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    Node.js
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    jQuery
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    Bootstrap
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    Tailwind CSS
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- BASES DE DATOS -->
+
+            <div class="tech-group">
+
+                <h4>BASES DE DATOS</h4>
+
+                <div class="tech-row">
+                    MySQL
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    SQL Server
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    MariaDB
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+                <div class="tech-row">
+                    MongoDB
+                    <span class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <div class="top-bar">
+
+            <div class="name">
+                EDUIN
+                <span class="last">AMILCAR MAY UC</span>
+            </div>
+
+            <div class="role">
+                DESARROLLADOR DE SOFTWARE BACK-END / FULL STACK
+            </div>
+
+            <div class="top-contact">
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Mérida, Yucatán, México
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    (999) 613 0007
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    eduin.may95@hotmail.com
+                </span>
+
+                <span>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    linkedin.com/in/eduin-amilcar-may
+                </span>
+
+                <span>
+                    <i class="fa-brands fa-github"></i>
+                    github.com/EduinMay95
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="content">
+
+            <!-- EXPERIENCIA -->
+
+            <div class="section-title">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-briefcase"></i>
+                </span>
+                EXPERIENCIA PROFESIONAL
+            </div>
+
+
+            <!-- FUNDACIÓN -->
+
+            <div class="job">
+
+                <div class="job-title">
+                    <i class="fa-solid fa-circle"></i>
+
+                    DESARROLLADOR BACKEND / MICROSERVICIOS
+
+                    <span class="sep">|</span>
+
+                    <span class="company">
+                        FUNDACIÓN RAFAEL DONDE I.A.P.
+                    </span>
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Desarrollo y mantenimiento de microservicios utilizando .NET, Node.js y NestJS.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Diseño e implementación de APIs REST seguras, escalables y documentadas con Swagger/OpenAPI.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Contenerización y despliegue de aplicaciones mediante Docker y Docker Compose.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Administración del código fuente con Git, GitHub y flujos de trabajo colaborativos (Git Flow).
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Desarrollo de soluciones en AWS utilizando Lambda, API Gateway, S3, IAM, CloudWatch, EC2, RDS y CloudFront.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Implementación de autenticación y autorización con JWT y OAuth2.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Integración de servicios mediante RabbitMQ y arquitectura basada en eventos.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Desarrollo bajo arquitectura de Microservicios, Clean Architecture y patrón MVC.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Optimización de consultas y administración de bases de datos SQL Server, MySQL, PostgreSQL, MongoDB y Redis.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Desarrollo con GraphQL y APIs REST para integración entre sistemas.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Implementación de procesos de CI/CD con GitHub Actions.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Configuración de Nginx como servidor web y reverse proxy.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Trabajo bajo metodologías Scrum, utilizando Jira y Trello para la gestión de proyectos.
+                    </li>
+
+                </ul>
+
+                <div class="tech-line">
+                    <b>Tecnologías:</b>
+                    .NET, C#, Node.js, NestJS, PHP, Laravel, Python,
+                    JavaScript, TypeScript, GraphQL, RESTful APIs,
+                    Docker, Docker Compose, Kubernetes, AWS,
+                    Git, GitHub, GitHub Actions, SQL Server,
+                    PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ,
+                    JWT, OAuth2, Swagger, Nginx, Scrum, Jira, Trello.
+                </div>
+
+            </div>
+
+
+            <!-- TOYOTA -->
+
+            <div class="job">
+
+                <div class="job-title">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    DESARROLLADOR DE SOFTWARE
+
+                    <span class="sep">/</span>
+
+                    <span class="company">
+                        TOYOTA MÉRIDA
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Análisis, desarrollo y gestión de proyecto CicloData.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Migración de proyecto a GitHub y funciones de Scrum.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Backend: JavaScript, PHP, AJAX | BD: MySQL, Procedimientos almacenados.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- BOMSSA 1 -->
+
+            <div class="job">
+
+                <div class="job-title">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    PROGRAMADOR DE SOFTWARE
+
+                    <span class="sep">/</span>
+
+                    <span class="company">
+                        BOMSSA
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Importaciones y pedidos (propia de la empresa).
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Backend: JavaScript, jQuery, PHP, AJAX, MySQL.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- BOMSSA 2 -->
+
+            <div class="job">
+
+                <div class="job-title">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    PROGRAMADOR DE SOFTWARE
+
+                    <span class="sep">/</span>
+
+                    <span class="company">
+                        BOMSSA
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Sistema de cálculo de importes y pedidos.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- BOMSSA 3 -->
+
+            <div class="job">
+
+                <div class="job-title">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    PROGRAMADOR DE SOFTWARE
+
+                    <span class="sep">/</span>
+
+                    <span class="company">
+                        BOMSSA
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Centro de servicio (propia de la empresa).
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- BOMSSA 4 -->
+
+            <div class="job">
+
+                <div class="job-title">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    PROGRAMADOR DE SOFTWARE
+
+                    <span class="sep">/</span>
+
+                    <span class="company">
+                        BOMSSA
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Punto de venta (propia de la empresa).
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Soporte técnico y mejoras continuas de sistemas internos.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- UTP -->
+
+            <div class="job">
+
+                <div class="job-title">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    DESARROLLADOR DE SOFTWARE
+
+                    <span class="sep">/</span>
+
+                    <span class="company">
+                        UTP | Universidad Tecnológica del Poniente
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Desarrollo y mantenimiento de la plataforma de Reporte Técnico en Laravel 6.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Soporte técnico y atención a usuarios del departamento.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Integración de funcionalidades para automatizar flujos de trabajo.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Base de datos: MySQL | Front-end: HTML5, Bootstrap, CSS3.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Herramientas: Laravel, JavaScript, jQuery, PHP 5.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= BOTTOM ================= -->
+
+            <div class="bottom-grid">
+
+                <div>
+
+                    <div class="section-title">
+
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+
+                        COMPETENCIAS PROFESIONALES
+
+                    </div>
+
+                    <ul class="comp-list">
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Desarrollo Back-End con Laravel y PHP
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            APIs RESTful y Microservicios
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Integración de Sistemas
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Optimización de Bases de Datos
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Control de Versiones (Git)
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Metodologías Ágiles (Scrum)
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Trabajo en equipo y comunicación
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <div class="section-title">
+
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+
+                        TECNOLOGÍAS DESTACADAS
+
+                    </div>
+
+
+                    <div class="badge-grid">
+
+                        <div class="badge">
+                            <i class="fa-brands fa-microsoft"></i>
+                            .NET
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-hashtag"></i>
+                            C#
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-cat"></i>
+                            NestJS
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-t"></i>
+                            TypeScript
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                            GraphQL
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-elephant"></i>
+                            PostgreSQL
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-cube"></i>
+                            Redis
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-rabbit"></i>
+                            RabbitMQ
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-key"></i>
+                            JWT
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-lock"></i>
+                            OAuth2
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-file-code"></i>
+                            Swagger
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-server"></i>
+                            Nginx
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-bolt"></i>
+                            AWS Lambda
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-aws"></i>
+                            AWS S3
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            API Gateway
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-server"></i>
+                            EC2
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-database"></i>
+                            RDS
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-user-shield"></i>
+                            IAM
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-eye"></i>
+                            CloudWatch
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-cloud"></i>
+                            CloudFront
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-docker"></i>
+                            Docker
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-docker"></i>
+                            Docker Compose
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-solid fa-dharmachakra"></i>
+                            Kubernetes
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub Actions
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-git-alt"></i>
+                            Git
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-jira"></i>
+                            Jira
+                        </div>
+
+                        <div class="badge">
+                            <i class="fa-brands fa-trello"></i>
+                            Trello
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cv = document.getElementById("cv");
+    const btnPng = document.getElementById("downloadPng");
+    const btnPdf = document.getElementById("downloadPdf");
+
+    /*
+     * Esperamos a que la imagen del CV esté completamente cargada.
+     */
+    function waitForImages() {
+
+        const images = [...cv.querySelectorAll("img")];
+
+        return Promise.all(
+            images.map(img => {
+
+                if (img.complete) {
+                    return Promise.resolve();
+                }
+
+                return new Promise(resolve => {
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                });
+
+            })
+        );
+
+    }
+
+
+    /*
+     * Desactiva temporalmente los botones para que
+     * nunca aparezcan dentro de la captura.
+     */
+    function hideButtons() {
+
+        document.body.classList.add("exporting");
+
+    }
+
+
+    /*
+     * Reactiva los botones.
+     */
+    function showButtons() {
+
+        document.body.classList.remove("exporting");
+
+    }
+
+
+    /*
+     * Configuración de html2canvas.
+     *
+     * useCORS:false evita el problema de canvas contaminado
+     * por recursos externos.
+     *
+     * La foto se encuentra localmente en el mismo directorio.
+     */
+    async function createCanvas() {
+
+        await waitForImages();
+
+        hideButtons();
+
+        await new Promise(resolve => setTimeout(resolve, 300));
+
+        try {
+
+            const canvas = await html2canvas(cv, {
+
+                scale: 2,
+
+                useCORS: false,
+
+                allowTaint: false,
+
+                backgroundColor: "#ffffff",
+
+                logging: false,
+
+                imageTimeout: 15000,
+
+                foreignObjectRendering: false,
+
+                width: cv.scrollWidth,
+
+                height: cv.scrollHeight,
+
+                windowWidth: cv.scrollWidth,
+
+                windowHeight: cv.scrollHeight
+
+            });
+
+            return canvas;
+
+        } finally {
+
+            showButtons();
+
+        }
+
+    }
+
+
+    /*
+     * Descargar PNG
+     */
+    btnPng.addEventListener("click", async function () {
+
+        const original = btnPng.innerHTML;
+
+        btnPng.disabled = true;
+
+        btnPng.innerHTML =
+            '<i class="fa-solid fa-spinner fa-spin"></i><span>Generando...</span>';
+
+        try {
+
+            const canvas = await createCanvas();
+
+            const link = document.createElement("a");
+
+            link.download = "CV-Eduin-Amilcar-May-Uc.png";
+
+            link.href = canvas.toDataURL("image/png", 1.0);
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            link.remove();
+
+        } catch (error) {
+
+            console.error("Error generando PNG:", error);
+
+            alert(
+                "No fue posible generar el PNG. " +
+                "Verifica que foto.jpeg se encuentre en la misma carpeta."
+            );
+
+        } finally {
+
+            btnPng.disabled = false;
+            btnPng.innerHTML = original;
+
+        }
+
+    });
+
+
+    /*
+     * Descargar PDF
+     */
+    btnPdf.addEventListener("click", async function () {
+
+        const original = btnPdf.innerHTML;
+
+        btnPdf.disabled = true;
+
+        btnPdf.innerHTML =
+            '<i class="fa-solid fa-spinner fa-spin"></i><span>Generando...</span>';
+
+        try {
+
+            const canvas = await createCanvas();
+
+            const imgData = canvas.toDataURL("image/png", 1.0);
+
+            const {
+                jsPDF
+            } = window.jspdf;
+
+
+            /*
+             * PDF A4 vertical.
+             */
+            const pdf = new jsPDF({
+
+                orientation: "portrait",
+
+                unit: "mm",
+
+                format: "a4",
+
+                compress: true
+
+            });
+
+
+            const pageWidth = 210;
+            const pageHeight = 297;
+
+
+            /*
+             * Relación entre canvas y PDF.
+             */
+            const imgWidth = pageWidth;
+
+            const imgHeight =
+                canvas.height * imgWidth / canvas.width;
+
+
+            /*
+             * Si el CV es más alto que una página,
+             * lo dividimos automáticamente.
+             */
+            let heightLeft = imgHeight;
+
+            let position = 0;
+
+
+            pdf.addImage(
+
+                imgData,
+
+                "PNG",
+
+                0,
+
+                position,
+
+                imgWidth,
+
+                imgHeight,
+
+                undefined,
+
+                "FAST"
+
+            );
+
+
+            heightLeft -= pageHeight;
+
+
+            while (heightLeft > 0) {
+
+                position = heightLeft - imgHeight;
+
+                pdf.addPage();
+
+                pdf.addImage(
+
+                    imgData,
+
+                    "PNG",
+
+                    0,
+
+                    position,
+
+                    imgWidth,
+
+                    imgHeight,
+
+                    undefined,
+
+                    "FAST"
+
+                );
+
+                heightLeft -= pageHeight;
+
+            }
+
+
+            pdf.save("CV-Eduin-Amilcar-May-Uc.pdf");
+
+        } catch (error) {
+
+            console.error("Error generando PDF:", error);
+
+            alert(
+                "No fue posible generar el PDF. " +
+                "Verifica que foto.jpeg esté en la misma carpeta."
+            );
+
+        } finally {
+
+            btnPdf.disabled = false;
+            btnPdf.innerHTML = original;
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
