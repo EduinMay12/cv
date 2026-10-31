@@ -145,7 +145,7 @@ body {
 
 .sidebar {
 
-    background: var(--navy);
+    background: var(--navy-dark);
 
     color: white;
 
@@ -446,9 +446,9 @@ body {
 
 .header {
 
-    background: var(--navy-dark);
+    background: var(--white);
 
-    color: white;
+    color: var(--navy-dark);
 
     padding: 8mm 9mm 6mm;
 }
@@ -472,7 +472,7 @@ body {
 
     margin: 5px 0 15px;
 
-    color: #b9c5da;
+    color: var(--blue);
 
     font-family: "Montserrat", sans-serif;
 
@@ -496,7 +496,7 @@ body {
 
     gap: 6px;
 
-    border-top: 1px solid #34415e;
+    border-top: 1px solid var(--line);
 
     padding-top: 12px;
 }
@@ -510,7 +510,7 @@ body {
 
     gap: 4px;
 
-    color: #dce2ee;
+    color: var(--blue);
 
     font-size: 6.5px;
 
@@ -520,7 +520,7 @@ body {
 
 .highlights i {
 
-    color: var(--blue-light);
+    color: var(--navy-dark);
 
     font-size: 10px;
 }
@@ -561,7 +561,7 @@ body {
 
     border-radius: 50%;
 
-    background: var(--green);
+    background: var(--blue-light);
 
     color: white;
 
